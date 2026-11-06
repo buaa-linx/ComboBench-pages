@@ -9,7 +9,8 @@ ComboBench studies robust 3D perception under compositional camera–LiDAR corru
 ## Resource status
 
 - Paper PDF: not publicly released yet.
-- Paper, research code, and data buttons are reserved until public URLs are available.
+- Code: [official implementation repository](https://github.com/buaa-linx/ComboBench).
+- Paper and data buttons are reserved until public URLs are available.
 - Qualitative Results: two reserved videos each for nuScenes-combo and KITTI-combo.
 
 ## Website source
