@@ -8,9 +8,9 @@ ComboBench studies robust 3D perception under compositional camera–LiDAR corru
 
 ## Resource status
 
-- Manuscript PDF: not publicly released yet.
+- Paper PDF: not publicly released yet.
 - Paper, research code, and data buttons are reserved until public URLs are available.
-- nuScenes and KITTI videos: reserved positions.
+- Qualitative Results: two reserved videos each for nuScenes-combo and KITTI-combo.
 
 ## Website source
 
@@ -25,3 +25,5 @@ The complete numerical data from Tables 7 and 8 is also retained in `assets/data
 ## Third-party assets
 
 Icon sources and license notices are preserved in [assets/icons/SOURCES.md](assets/icons/SOURCES.md).
+
+Typography uses locally hosted Noto Sans under the SIL Open Font License; source and license are in `assets/fonts/`.

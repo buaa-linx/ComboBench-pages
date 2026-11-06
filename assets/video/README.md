@@ -1,3 +1,10 @@
-Place the two project MP4/WebM files in this folder. Set `videos.nuscenes` and `videos.kitti` independently in `site-config.js`, for example `assets/video/nuscenes.mp4` and `assets/video/kitti.mp4`.
+# Qualitative videos
 
-No project videos have been supplied yet. The webpage shows two explicitly reserved positions without fake playback controls. Adding a real URL turns only the matching position into a video player.
+Four MP4/WebM positions are reserved, grouped by dataset. Configure the two entries in each array in `site-config.js`:
+
+- `videos.nuscenes[0]`: nuScenes-combo / Fog-Echo Depletion-Occlusion
+- `videos.nuscenes[1]`: nuScenes-combo / title to be determined
+- `videos.kitti[0]`: KITTI-combo / Fog-Echo Depletion-Occlusion
+- `videos.kitti[1]`: KITTI-combo / title to be determined
+
+Keep an entry `null` until its real video is available. Placeholders are not sample videos. Each position can be filled independently. Edit the matching `h4` in `index.html` when a title is finalized.

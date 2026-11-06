@@ -44,13 +44,17 @@ document.querySelectorAll("[data-author]").forEach(element => {
 });
 document.querySelectorAll("[data-video]").forEach(slot => {
   const key = slot.dataset.video;
-  const url = safeUrl(config.videos?.[key]);
+  const index = Number(slot.dataset.videoIndex || 0);
+  const urls = config.videos?.[key];
+  const url = safeUrl(Array.isArray(urls) ? urls[index] : index === 0 ? urls : null);
   if (!url) return;
-  const video = document.createElement("video");
+  const video = slot.querySelector("video") || document.createElement("video");
   video.controls = true;video.playsInline = true;video.preload = "metadata";
-  video.src = url;video.setAttribute("aria-label",`${key === "nuscenes" ? "nuScenes" : "KITTI"} demonstration video`);
+  video.src = url;
   slot.replaceChildren(video);
-  document.getElementById(`video-state-${key}`).textContent = key === "nuscenes" ? "nuScenes-Combo demonstration" : "KITTI-Combo demonstration";
+  const stateId = video.getAttribute("aria-describedby");
+  const state = stateId ? document.getElementById(stateId) : null;
+  if (state) state.hidden = true;
 });
 
 const imageDialog = document.getElementById("image-dialog");
