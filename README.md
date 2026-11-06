@@ -27,3 +27,7 @@ The complete numerical data from Tables 7 and 8 is also retained in `assets/data
 Icon sources and license notices are preserved in [assets/icons/SOURCES.md](assets/icons/SOURCES.md).
 
 Typography uses locally hosted Noto Sans under the SIL Open Font License; source and license are in `assets/fonts/`.
+
+## Acknowledgements
+
+The typography and video presentation of this project page were inspired by [Academic Project Astro Template](https://github.com/RomanHauksson/academic-project-astro-template) by Roman Hauksson.
